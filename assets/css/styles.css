@@ -1,0 +1,48 @@
+/* Gaya untuk seluruh halaman */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Gaya untuk membuat video memenuhi seluruh layar */
+  #bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Video berada di belakang konten */
+    transform: translate(-50%, -50%);
+    background-size: cover;
+  }
+  
+  /* Kontainer untuk video dan konten */
+  .video-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Konten yang ditampilkan di atas video */
+  .content {
+    position: relative;
+    z-index: 1; /* Konten di atas video */
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Gaya untuk teks */
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
